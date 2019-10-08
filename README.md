@@ -46,7 +46,7 @@ MAIN: def dijkstra(adjacency_list, number_of_nodes, starting_point)
 ```
 
 > image helper
-![image-helper](https://raw.githubusercontent.com/mateuszmilewski/simple-dijkstra/master/Capture.png)
+![image-helper](https://github.com/mateuszmilewski/simple-dijkstra/blob/master/Capture.PNG)
 
 > ruby dijkstra.rb
 
