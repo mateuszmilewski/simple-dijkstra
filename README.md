@@ -13,6 +13,39 @@ class Node, class Path
 MAIN: def dijkstra(adjacency_list, number_of_nodes, starting_point)
 
 
+> path preliminary config
+
+```
+
+    adjacency_list = [
+        Node.new(0),
+        Node.new(1),
+        Node.new(2),
+        Node.new(3),
+        Node.new(4)
+    ]
+
+    arr = adjacency_list
+
+
+    zero = arr[0]
+    jeden = arr[1]
+    dwa = arr[2]
+    trzy = arr[3]
+    cztery = arr[4]
+
+    # example: myNode.add_path_and_node(node, Path.new(4))
+    zero.add_path_and_node(zero, Path.new(0))
+    zero.add_path_and_node(jeden, Path.new(4))
+    zero.add_path_and_node(dwa, Path.new(1))
+    jeden.add_path_and_node(trzy, Path.new(1))
+    dwa.add_path_and_node(jeden, Path.new(2))
+    dwa.add_path_and_node(trzy, Path.new(5))
+    trzy.add_path_and_node(cztery, Path.new(3))
+
+```
+
+
 
 > ruby dijkstra.rb
 
